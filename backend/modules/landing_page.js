@@ -30,7 +30,7 @@ function addCityToDOM(id, city, description, image) {
   // TODO: MODULE_CITIES
   // 1. Populate the City details and insert those details into the DOM
   let div = document.getElementById("data");
-  let card = `<a class="tile col-6 col-md-3" id="${id}" href="pages/adventures/?city=${id}"> <img src='${image}' ></img> <div class='tile-text' > <p>${city}</p> <p>${description}</p> </div></a>`;
+  let card = `<a class="tile" id="${id}" href="pages/adventures/?city=${id}"> <img src='${image}' ></img> <div class='tile-text' > <p>${city}</p> <p>${description}</p> </div></a>`;
   div.innerHTML = div.innerHTML + card;
   console.log(div);
 }
