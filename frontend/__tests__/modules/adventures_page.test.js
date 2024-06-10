@@ -7,7 +7,7 @@ import {
   filterFunction,
   saveFiltersToLocalStorage,
   getFiltersFromLocalStorage,
-  generateFilterPillsAndUpdateDOM,
+  generateFilterPillsAndUpdateDOM
 } from "../../modules/adventures_page.js";
 
 require("jest-fetch-mock").enableMocks();
@@ -355,12 +355,7 @@ describe("Adventure Page Tests", function () {
     const filters = { duration: "12-20", category: ["Beaches", "Cycling"] };
 
     generateFilterPillsAndUpdateDOM(filters);
-    console.log(
-      document.getElementById("category-list").children.length,
-      filters.category.length
-    );
-    expect(document.getElementById("category-list").children.length).toEqual(
-      filters.category.length
-    );
+
+    expect(document.getElementById("category-list").children.length).toEqual(filters.category.length);    
   });
 });
