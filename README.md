@@ -99,6 +99,6 @@ During the course of this project,
 - **Scope of work**:
   - Deployed the QTrip backend to Render.
   - Configured the QTrip dynamic frontend to use the Render deployed backend
-  - Deployed the QTrip dynamic frontend to Vercel
+  - Deployed the QTrip dynamic frontend to Vercel via terminal
 - **Skills used**:
   - Deployment, Render, Vercel
